@@ -1,9 +1,19 @@
 import os
 
+# A variável 'restaurantes' é uma lista de dicionários.
+# Cada dicionário representa um restaurante, com as chaves: 'nome', 'categoria' e 'ativo'.
+# Isso permite guardar vários restaurantes e acessar os dados de cada um facilmente.
+
 restaurantes = [{'nome': 'Praça', 'categoria': 'brasileira', 'ativo': False}, 
                {'nome': 'sushi place', 'categoria': 'japonesa', 'ativo': True},
                {'nome': 'pasta fresca', 'categoria': 'italiana', 'ativo': False}]
  
+
+# As funções (def) dividem o programa em tarefas: cadastrar, listar, ativar/desativar restaurante, finalizar, etc.
+# O menu chama cada função conforme a escolha do usuário.
+# Os dados dos restaurantes ficam numa lista de dicionários.
+# Funções auxiliares ajudam na navegação e apresentação.
+
 
 
 def exibir_nome_do_programa():
@@ -43,6 +53,11 @@ def exibir_subtitulo(texto):
      print()
 
 
+# Cada função tem:
+# - inputs: dados que ela recebe (exemplo: nome e categoria do restaurante, digitados pelo usuário)
+# - outputs: resultado ou efeito (exemplo: adiciona restaurante à lista, mostra mensagem na tela)
+# Isso ajuda a entender o que informar e o que esperar de cada função, facilitando manutenção e uso.
+
 
 def cadastrar_novo_restaurante():
      '''Essa função é responsável por cadastrar um novo restaurante
@@ -53,8 +68,7 @@ def cadastrar_novo_restaurante():
 
      outputs:
      -adiciona um novo restaurante na lista de restaurantes
-
-
+     
      '''
 
      exibir_subtitulo('Cadastro de novos restaurantes')
